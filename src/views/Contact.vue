@@ -13,17 +13,17 @@ export default {
 			contacts: [
 				{
 					id: 1,
-					name: 'Your Address, Your City, Your Country',
+					name: 'Jalan Letjen S Parman Kos A3, Jakarta Barat, Indonesia',
 					icon: 'map-pin',
 				},
 				{
 					id: 2,
-					name: 'email@domain.com',
+					name: 'vanesschenn@yahoo.com',
 					icon: 'mail',
 				},
 				{
 					id: 3,
-					name: '555 8888 888',
+					name: '0896 7218 0021',
 					icon: 'phone',
 				},
 			],
