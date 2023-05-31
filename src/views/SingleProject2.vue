@@ -1,133 +1,6 @@
-<script>
-import feather from 'feather-icons';
-import ProjectHeader from '../components/projects/ProjectHeader.vue';
-import ProjectGallery from '../components/projects/ProjectGallery.vue';
-import ProjectInfo from '../components/projects/ProjectInfo.vue';
-import ProjectRelatedProjects from '../components/projects/ProjectRelatedProjects.vue';
-
-export default {
-	name: 'Projects',
-	components: {
-		ProjectHeader,
-		ProjectGallery,
-		ProjectInfo,
-		ProjectRelatedProjects,
-	},
-	data: () => {
-		return {
-			singleProjectHeader: {
-				singleProjectTitle: 'Project UTS Web DevelopDASDASmentASDADAS',
-				singleProjectDate: 'October 27, 2021',
-				singleProjectTag: 'UI / Frontend',
-			},
-			projectImages: [
-				{
-					id: 1,
-					title: 'Kabul Project Management UI',
-					img: require('@/assets/images/HTML_Project.jpg'),
-				},
-				{
-					id: 2,
-					title: 'Kabul Project Management UI',
-					img: require('@/assets/images/4us1.jpg'),
-				},
-				{
-					id: 3,
-					title: 'Kabul Project Management UI',
-					img: require('@/assets/images/4us2.jpg'),
-				},
-			],
-			projectInfo: {
-				clientHeading: 'About Client',
-				companyInfos: [
-					{
-						id: 1,
-						title: 'Name',
-						details: 'Company Ltd',
-					},
-					{
-						id: 2,
-						title: 'Services',
-						details: 'UI Design & Frontend Development',
-					},
-					{
-						id: 3,
-						title: 'Website',
-						details: 'https://company.com',
-					},
-					{
-						id: 4,
-						title: 'Phone',
-						details: '555 8888 888',
-					},
-				],
-				objectivesHeading: 'Objective',
-				objectivesDetails:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
-				technologies: [
-					{
-						title: 'Tools & Technologies',
-						techs: [
-							'HTML',
-							'CSS',
-							'JavaScript',
-							'Vue.js',
-							'TailwindCSS',
-							'AdobeXD',
-						],
-					},
-				],
-				
-				projectDetails: [
-					{
-						id: 1,
-						details:
-							'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-					},
-					
-				],
-
-				
-			},
-			relatedProject: {
-				relatedProjectsHeading: 'Related Projects',
-				relatedProjects: [
-					{
-						id: 1,
-						title: 'Mobile UI',
-						img: require('@/assets/images/mobile-project-1.jpg'),
-					},
-					{
-						id: 2,
-						title: 'Web Application',
-						img: require('@/assets/images/web-project-1.jpg'),
-					},
-					{
-						id: 3,
-						title: 'UI Design',
-						img: require('@/assets/images/ui-project-2.jpg'),
-					},
-					{
-						id: 4,
-						title: 'Kabul Mobile App UI',
-						img: require('@/assets/images/mobile-project-2.jpg'),
-					},
-				],
-			},
-		};
-	},
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-	methods: {},
-};
-</script>
-
 <template>
 	<div class="container mx-auto mt-10 sm:mt-20">
+		
 		<!-- Project header -->
 		<ProjectHeader :singleProjectHeader="singleProjectHeader" />
 
@@ -137,9 +10,105 @@ export default {
 		<!-- Project information -->
 		<ProjectInfo :projectInfo="projectInfo" />
 
-		<!-- Project related projects -->
-		<ProjectRelatedProjects :relatedProject="relatedProject" />
+		<!-- Live Demo -->
+		<div class="mt-8">
+			<a class="text-white hover:underline text-2xl font-bold" href="https://vaness02.github.io/Kelompok_2_4us/index.html" target="_blank" style="font-family: 'Roboto', sans-serif;">Live Demo</a>
+			<br><br>
+			<a class="text-white hover:underline text-2xl font-bold" href="https://github.com/vaness02/Kelompok_2_4us/tree/other" target="_blank" style="font-family: 'Roboto', sans-serif;">Source Code</a>
+
+		</div>
 	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.text-white {
+	color: white;
+}
+.font-bold {
+	font-weight: bold;
+}
+.text-2xl {
+	font-size: 1.5rem;
+}
+</style>
+
+
+  
+  <script>
+  import feather from 'feather-icons';
+  import ProjectHeader from '../components/projects/ProjectHeader.vue';
+  import ProjectGallery from '../components/projects/ProjectGallery.vue';
+  import ProjectInfo from '../components/projects/ProjectInfo.vue';
+  
+  import { hasScopeRef } from '@vue/compiler-core';
+  
+  export default {
+	name: 'Projects',
+	components: {
+	  ProjectHeader,
+	  ProjectGallery,
+	  ProjectInfo,
+	},
+	data: () => {
+	  return {
+		singleProjectHeader: {
+		  singleProjectTitle: 'Project UTS Web ',
+		  singleProjectDate: 'October 27, 2021',
+		  singleProjectTag: 'UI / Frontend',
+		},
+		projectImages: [
+		  {
+			id: 1,
+			title: 'Kabul Project Management UI',
+			img: require('@/assets/images/HTML_Project.jpg'),
+		  },
+		  {
+			id: 2,
+			title: 'Kabul Project Management UI',
+			img: require('@/assets/images/4us1.jpg'),
+		  },
+		  {
+			id: 3,
+			title: 'Kabul Project Management UI',
+			img: require('@/assets/images/4us2.jpg'),
+		  },
+		],
+		projectInfo: {
+		  clientHeading: 'Tentang Tugas Ini',
+		  objectivesDetails:
+			'Membuat website online shop. Pada tugas ini kelompok saya memilih produk sepatu untuk dijual-belikan.',
+		  technologies: [
+			{
+			  title: 'Tools & Technologies',
+			  techs: [
+				'HTML',
+				'CSS',
+			  ],
+			},
+		  ],
+		  liveDemoLink: 'https://vaness02.github.io/Kelompok_2_4us/index.html', // Tambahkan properti liveDemoLink
+		},
+	  };
+	},
+	mounted() {
+	  feather.replace();
+	},
+	updated() {
+	  feather.replace();
+	},
+	methods: {},
+  };
+  </script>
+  
+  <style scoped>
+  .text-white {
+	color: white;
+  }
+  .font-bold {
+	font-weight: bold;
+  }
+  .text-2xl {
+	font-size: 1.5rem;
+  }
+  </style>
+  

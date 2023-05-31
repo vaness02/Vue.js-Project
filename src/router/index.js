@@ -35,7 +35,7 @@ const routes = [
 		},
 	},
 	{
-		path: '/projects/single-project',
+		path: '/projects/single-project/1',
 		name: 'Single Project',
 		// route level code-splitting
 		// this generates a separate chunk (projects.[hash].js) for this route
@@ -49,7 +49,7 @@ const routes = [
 		},
 	},
 	{
-		path: '/projects/single-project2',
+		path: '/projects/single-project/2',
 		name: 'Single Project2',
 		// route level code-splitting
 		// this generates a separate chunk (projects.[hash].js) for this route
@@ -63,7 +63,7 @@ const routes = [
 		},
 	},
 	{
-		path: '/projects/single-project3',
+		path: '/projects/single-project/3',
 		name: 'Single Project3',
 		// route level code-splitting
 		// this generates a separate chunk (projects.[hash].js) for this route
