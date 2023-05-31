@@ -1,4 +1,11 @@
-// vue.config.js
+// // vue.config.js
+// module.exports = {
+//     publicPath: ‘/Vue.js-Project/’
+//     }
+
 module.exports = {
-    publicPath: ‘/vuejs-tailwindcss-portfolio’
-    }
+    publicPath: process.env.NODE_ENV === "production" 
+    ? "/Vue.js-Project /" : "/",
+  };
+
+  

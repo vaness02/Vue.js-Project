@@ -6,12 +6,17 @@ export default {
 				{
 					id: 1,
 					bio:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+						'Saya adalah mahasiswa yang sedang menempuh pendidikan di Universitas Tarumanagara pada saat ini dengan jurusan teknik informatika',
 				},
 				{
 					id: 2,
 					bio:
-						'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+						'Hobi saya adalah mendengarkan musik, saya hampir selalu mendengarkan musik kapanpun, untuk meningkatkan produktivitas saya atau sekedar bersantai.',
+				},
+				{
+					id: 2,
+					bio:
+						'Selain itu, Saya juga memiliki hobi dalam merakit komputer, kadang saya suka membongkar komputer saya sendiri untuk sekedar dibersihkan atau mengganti pastanya. Saya juga memiliki hobi untuk merakit keyboard, entah sekedar mengganti keycapsnya atau mengganti switch keyboard agar feel tekanan dan suara yang dikeluarkan dari keyboard tersebut dapat saya dengar atau rasakan dengan puas.',
 				},
 			],
 		};
@@ -24,7 +29,7 @@ export default {
 		<!-- About profile image -->
 		<div class="w-full sm:w-1/4 mb-7 sm:mb-0">
 			<img
-				src="@/assets/images/profile.jpeg"
+				src="@/assets/images/fotoformal.jpg"
 				class="rounded-xl w-96"
 				alt=""
 			/>

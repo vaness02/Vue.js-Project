@@ -20,7 +20,8 @@ const projects = [
 		category: 'UI/UX Design',
 		img: require('@/assets/images/ui-project-1.jpg'),
 	},
-	
 ];
+
+
 
 export default projects;

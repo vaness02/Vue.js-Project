@@ -16,7 +16,7 @@ export default {
 	data: () => {
 		return {
 			singleProjectHeader: {
-				singleProjectTitle: 'Project UTS Web Development',
+				singleProjectTitle: 'Project UTShehehe',
 				singleProjectDate: 'October 27, 2021',
 				singleProjectTag: 'UI / Frontend',
 			},

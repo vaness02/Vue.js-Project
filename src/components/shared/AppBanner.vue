@@ -38,6 +38,11 @@ export default {
 			>
 				Mahasiswa Universitas Tarumanagara Jurusan Teknik Informatika
 			</p>
+			<p
+				class="font-general-medium mt-2 text-lg sm:text-xl  xl:text-2xl text-center sm:text-left leading-none text-gray-400"
+			>
+				Berasal dari Kalimantan Barat dan Berusia 21 Tahun
+			</p>
 			
 		</div>
 
